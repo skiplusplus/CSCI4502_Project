@@ -39,6 +39,8 @@ print "\nradianceData_wave =", radianceData_wave
 # convert wavelength data to frequency data 
 frequencyData = c / wavelengthData
 print "\n\nfrequencyData =", frequencyData
+
+# plug frequency data into radiance equation
 radianceData_freq = radiance_frequency(frequencyData, 18)
 print "\nradianceData_freq =", radianceData_freq, "\n"
 
