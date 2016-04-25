@@ -3,6 +3,7 @@
 #++++++++++++++++++++++++++++++++++++++++++++++
 # File:  getMaxIntensities.py
 # Author:  Jacob C. Levine
+# Modified by:  Jon Allured
 # Class Project:  CSCI 4502 Data Mining
 # Date created:  4/23/16
 #++++++++++++++++++++++++++++++++++++++++++++++
