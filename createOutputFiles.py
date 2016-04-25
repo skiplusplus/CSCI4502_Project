@@ -22,7 +22,8 @@ from astropy.io import fits
 
 wavelength = sys.argv[1]
 print "Creating output file for", wavelength, "um wavelength"
-shape = (40501, 6000)
+shape = (6000, 40501)
+#shape = (40501, 6000)
 fill_value = numpy.nan
 dtype = numpy.float32
 order = 'C'
@@ -30,7 +31,7 @@ order = 'C'
 newDataArray = numpy.full(shape, fill_value, dtype, order)
 new_hdu = fits.PrimaryHDU(data=newDataArray)
 
-newFilename = "/home/user/DataMining/Results/" + wavelength + "maxIntensities.fits"
+newFilename = "fits/" + wavelength + "maxIntensities.fits"
 new_hdu.writeto(newFilename, clobber=True)
 new_hdulist = fits.open(newFilename)
 new_data = new_hdulist[0].data
